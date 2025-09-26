@@ -11,7 +11,7 @@ namespace EjerciciosPracticos_PrimerCorte
         //Actividad 1: Variables Globales{
         static List<string> inventario = new List<string>();
         //}
-        static void Main()
+        static void SistemaInventarioSimplificado()
         {
             bool salir = false;
 
