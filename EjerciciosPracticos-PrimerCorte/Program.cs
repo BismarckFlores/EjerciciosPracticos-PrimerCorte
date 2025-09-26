@@ -16,6 +16,7 @@ namespace EjerciciosPracticos_PrimerCorte
 
         static void Main(string[] args)
         {
+            bool programaActivo = true;
             do
             {
                 Console.Clear();
@@ -32,7 +33,7 @@ namespace EjerciciosPracticos_PrimerCorte
                 {
                     case "1":
                         // Llamar a la función del primer ejercicio
-                        SistemaInventarioSimplificado()
+                        SistemaInventarioSimplificado();
                         break;
                     case "2":
                         // Llamar a la función del segundo ejercicio
@@ -41,6 +42,10 @@ namespace EjerciciosPracticos_PrimerCorte
                         // Llamar a la función del tercer ejercicio
                         Actividad10();
                         break;
+                    case "4":
+                        Console.WriteLine("Saliendo del sistema. ¡Hasta luego!");
+                        programaActivo = false;
+                        break;
                     default:
                         Console.WriteLine("Opción inválida. Por favor, seleccione una opción entre 1 y 3.");
                         Console.Write("Presione cualquier tecla para continuar...");
@@ -48,7 +53,7 @@ namespace EjerciciosPracticos_PrimerCorte
                         break;
                 }
 
-            } while (true);
+            } while (programaActivo);
         }
       
         
@@ -126,7 +131,8 @@ namespace EjerciciosPracticos_PrimerCorte
                 {
                     Console.WriteLine($"- {producto}");
                 }
-
+            }
+        }
               
         // Actividad 10
         public static void Actividad10()
