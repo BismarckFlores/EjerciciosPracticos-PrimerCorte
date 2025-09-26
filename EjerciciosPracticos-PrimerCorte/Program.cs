@@ -40,6 +40,7 @@ namespace EjerciciosPracticos_PrimerCorte
                         SistemaInventarioSimplificado();
                         break;
                     case "2":
+                        SistemaVentas();
                         // Llamar a la función del segundo ejercicio
                         break;
                     case "3":
@@ -105,6 +106,8 @@ namespace EjerciciosPracticos_PrimerCorte
             string producto = Console.ReadLine();
             inventario.Add(producto);
             Console.WriteLine($"Producto '{producto}' agregado al inventario.");
+            Console.Write("Presione cualquier tecla para continuar...");
+            Console.ReadKey();
         }
 
         static void RetirarProducto()
@@ -119,6 +122,8 @@ namespace EjerciciosPracticos_PrimerCorte
             {
                 Console.WriteLine($"Producto '{producto}' no encontrado en el inventario.");
             }
+            Console.Write("Presione cualquier tecla para continuar...");
+            Console.ReadKey();
         }
 
         static void ConsultarInventario()
@@ -135,6 +140,8 @@ namespace EjerciciosPracticos_PrimerCorte
                     Console.WriteLine($"- {producto}");
                 }
             }
+            Console.Write("Presione cualquier tecla para continuar...");
+            Console.ReadKey();
         }
   
         // Actividad 7
